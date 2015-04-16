@@ -10,10 +10,10 @@ import UIKit
 
 class GameViewController: UIViewController {
 
-    @IBAction func backToMenu(sender: UIButton) {
-        //performSegueWithIdentifier("startGame", sender: self)
+    @IBAction func backToMenu(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
